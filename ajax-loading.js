@@ -55,12 +55,9 @@ class loading {
                 $(selector).hide();
             }, config.minTime);
         });
-
-        return $.loading;
     }
 
-    open() {
-        let time = this.config['time'];
+    open(time) {
         let selector = '#' + this.config['id'];
         $(selector).show();
         if (time) {
